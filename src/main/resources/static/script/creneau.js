@@ -71,6 +71,7 @@ $(document)
 
 										var id = $(this).closest('tr').find(
 												'td').eq(0).text();
+											
 										var oldLing = $(this).closest('tr')
 												.clone();
 										var newLigne = '<tr style="position: relative;" class="bg-light" ><th scope="row">'
@@ -92,8 +93,7 @@ $(document)
 												.click(
 														function(e) {
 															e.preventDefault();
-															$
-																	.ajax({
+															$.ajax({
 																		url : 'creneaus/delete/'
 																				+ id,
 																		data : {},
@@ -134,7 +134,6 @@ $(document)
 								var btn = $('#btn');
 								var id = $(this).closest('tr').find('td').eq(0)
 										.text();
-								;
 								var heureDebut = $(this).closest('tr').find('td').eq(
 										1).text();
 								var heureFin = $(this).closest('tr').find('td')
@@ -163,6 +162,8 @@ $(document)
 											success : function(data,
 													textStatus, jqXHR) {
 												table.ajax.reload();
+												$("#heureDebut").val('');
+												$("#heureFin").val('');
 											
 												btn.text('Ajouter');
 											},
@@ -177,36 +178,5 @@ $(document)
 								});
 							});
 
-					// function remplir(data) {
-					// var contenu = $('#table-content');
-					// var ligne = "";
-					// for (i = 0; i < data.length; i++) {
-					// ligne += '<tr><th scope="row">' + data[i].id + '</th>';
-					// ligne += '<td>' + data[i].code + '</td>';
-					// ligne += '<td>' + data[i].nom + '</td>';
-					// ligne += '<td>' + data[i].prix + '</td>';
-					// ligne += '<td>' + data[i].dateAchat + '</td>';
-					// ligne += '<td><button type="button" class="btn
-					// btn-outline-danger
-					// supprimer">Supprimer</button></td>';
-					// ligne += '<td><button type="button" class="btn
-					// btn-outline-secondary
-					// modifier">Modifier</button></td></tr>';
-					// }
-					// contenu.html(ligne);
-					// }
-
-					// $.ajax({
-					// url: 'produits/all',
-					// data: {op: ''},
-					// type: 'GET',
-					// async: false,
-					// success: function (data, textStatus, jqXHR) {
-					// console.log(data);
-					// remplir(data);
-					// },
-					// error: function (jqXHR, textStatus, errorThrown) {
-					// console.log(textStatus);
-					// }
-					// });
+					
 				});

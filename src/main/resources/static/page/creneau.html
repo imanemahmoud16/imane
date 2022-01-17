@@ -19,20 +19,21 @@
     </div>
     <div class="card bg-white">
         <div class="card-header card-color">
-            <p class="h2 text-center text-uppercase font-weight-bold pt-2">Gestion des Creneaux</p>
+            <p class="h2 text-center text-uppercase font-weight-bold pt-2">Gestion des creneaux</p>
         </div>
         <div class="card-body container-fluid">
             <div class="row">
                 <div class="col-sm-6 mb-2">
-                    <label for="code">Heure debut : </label>
+                    <label for="heureDebut">Heure Debut : </label>
                     <input class="" type="text" id="id" hidden>
-                    <input class="form-control" type="text" id="heureDebut" required>
+                    <input class="form-control" type="time" id="heureDebut" required>
+                </div>
 
-                </div>
                 <div class="col-sm-6 mb-2">
-                    <label for="nom">Heure fin : </label>
-                    <input class="form-control" type="text" id="heureFin" required>
+                    <label for="heureFin">Heure Fin : </label>
+                    <input class="form-control" type="time" id="heureFin" required>
                 </div>
+
             </div>
             
             <div class="row">
@@ -45,7 +46,7 @@
                     <thead>
                         <tr class="text-uppercase bg-light  w-100">
                             <th scope="col">Id</th>
-                            <th scope="col">Heure Debut</th>
+                            <th scope="col">Heure Debut---</th>
                             <th scope="col">Heure Fin</th>
                             <th scope="col">Supprimer</th>
                             <th scope="col">Modifier</th>

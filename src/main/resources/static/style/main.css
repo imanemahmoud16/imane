@@ -1,10 +1,10 @@
-﻿/*
+/*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /*
-    Created on : 22 déc. 2018, 13:04:48
+    Created on : 22 d�c. 2018, 13:04:48
     Author     : mosab
 */
 @font-face{
@@ -13,6 +13,8 @@ and open the template in the editor.
 }
 body {
     font-family: Quicksand, sans-serif;
+    
+  
 
 }
 #nav{
@@ -91,8 +93,8 @@ box-shadow: none;
     font-size: 80px;
 }
 .card-color{
-    background-color: #31353D;
-    color: white;
+    background-color: rgb(64, 128, 128);
+    color: rgb(192, 192, 192);
 }
 .custom-select{
     height:34px;
@@ -101,6 +103,7 @@ box-shadow: none;
 .page-content{
     overflow: auto;
     max-height: 100vh;
+    background-color:rgba(255,255,255,0.75);
 }
 
 .sidebar-menu li .active {

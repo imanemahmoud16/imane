@@ -11,15 +11,12 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-
-
-
 @Entity
-@Table(name="machine")
+@Table(name = "machine")
 public class Machine {
 	@Id
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
-	private int id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
 	private String reference;
 	@Temporal(TemporalType.DATE)
 	private Date dateAchat;
@@ -28,10 +25,10 @@ public class Machine {
 	private Marque marque;
 	@ManyToOne
 	private Salle salle;
-	
+
 	public Machine() {
-        salle  = new Salle();
-        marque  = new Marque();
+		salle = new Salle();
+		marque = new Marque();
 	}
 
 	public Salle getSalle() {
@@ -42,11 +39,11 @@ public class Machine {
 		this.salle = salle;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -87,8 +84,5 @@ public class Machine {
 		return "Machine [id=" + id + ", reference=" + reference + ", dateAchat=" + dateAchat + ", prix=" + prix
 				+ ", marque=" + marque + "]";
 	}
-	
-	
-	
 
 }

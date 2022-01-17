@@ -56,23 +56,23 @@ Notes:	decreasing heading by 0.4em with every subsequent heading level
 /* ------------------ SCROLL BAR ------------------*/
 ::-webkit-scrollbar {
     width: 10px;
-    border-radius: 5%;
+    border-radius: 10%;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: transparent;
+    background: #408080;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #555;
+    background: #408080;
 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #408080;
 }
 /* ------------------------------------------------ */
 ul {
@@ -121,7 +121,7 @@ p {
 .btn {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;
+    border-radius: 102px;
 }
 
 /* ----- Typography ----- */
@@ -303,6 +303,7 @@ section {
 /*Page Objects*/
 .page-wrapper {
     overflow: hidden;
+    height:100%;
 }
 
 .page-container {
@@ -383,7 +384,7 @@ section {
 }
 
 .login-checkbox > label > a {
-    color: #ff2e44;
+    color: #00ff00;
 }
 
 @media (max-width: 991px) {

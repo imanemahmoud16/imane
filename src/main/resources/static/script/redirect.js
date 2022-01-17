@@ -48,4 +48,11 @@ function show(page) {
 
 		event.preventDefault();
 	}
+	if (page == "reservations") {
+		$('a').removeClass('active');
+		$('a:contains(Reservations)').addClass('active');
+		$("#main-content").load("page/reservation.html");
+		event.preventDefault();
+   
+   }
 }

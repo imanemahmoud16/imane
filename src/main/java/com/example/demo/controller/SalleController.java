@@ -37,11 +37,9 @@ public class SalleController {
 		return salleRepository.findAll();
 	}
 	
-	@DeleteMapping(value = "/delete/{id}")
-	public void delete(@PathVariable(required = true) int id) {
-		System.out.println("id = "+id);
-		Salle salle = salleRepository.findById((id));
-		salleRepository.delete(salle);
+	@DeleteMapping("/delete/{id}")
+	public void delete(@PathVariable long id){
+		salleRepository.delete(salleRepository.findById(id));
 	}
 	
 }

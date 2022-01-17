@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class Salle {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	private long id;
 	private String code;
 	private String type;
 	private int capacite;
@@ -47,12 +47,35 @@ public class Salle {
 
 
 
-	public int getId() {
+	
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+
+
+
+
+	public void setId(long id) {
 		this.id = id;
 	}
+
+
+
+
+	public List<Machine> getMachines() {
+		return machines;
+	}
+
+
+
+
+	public void setMachines(List<Machine> machines) {
+		this.machines = machines;
+	}
+
+
+
+
 	public String getCode() {
 		return code;
 	}

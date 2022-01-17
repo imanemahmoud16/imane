@@ -52,8 +52,7 @@ $(document)
 											console.log(textStatus);
 										}
 									});
-									$("#main-content").load(
-											"./page/bloc.html");
+									$("#main-content").load("./page/bloc.html");
 								}
 							});
 

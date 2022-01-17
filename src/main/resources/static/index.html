@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Market</title>
+<title>University</title>
 
 
 <meta charset="utf-8">
@@ -36,69 +36,74 @@
 <script src="vendor/chartjs/Chart.min.js"></script>
 
 </head>
-<body>
+<body >
 	<div class="page-wrapper chiller-theme toggled">
 		<a id="show-sidebar" class="btn btn-sm btn-dark" href="#"> <i
 			class="fas fa-bars"></i>
 		</a>
-		<nav id="sidebar" class="sidebar-wrapper">
-			<div class="sidebar-content">
-				<div class="sidebar-brand">
-					<a href="./" class="h2 pt-2">Market</a>
-					<div id="close-sidebar">
-						<i class="fas fa-times"></i>
-					</div>
-				</div>
-				<div class="sidebar-header">
-					<div class="user-pic">
-						<img class="img-responsive img-rounded" src="img/no-photo.png"
-							alt="User picture">
-					</div>
-					<div class="user-info">
-						<span class="user-name"> <strong>NOM </strong>
-						</span> <span class="user-role">ROLE</span> <span class="user-status">
-							<i class="fa fa-circle"></i> <span>Online</span>
-						</span>
-					</div>
-				</div>
-				<!-- sidebar-header  -->
+<nav id="sidebar" class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(64, 128, 128); font-weight:bold;">
+			<div class="container-fluid">
+				
+					<a style="margin-left: 5%;color: rgb(192, 192, 192);" href="./index.html" class="navbar-brand" >UNIVERSITY ENSA</a>
+					    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 15%;">
+      
+           <li class="nav-item">
+			 <a  class="nav-link" href="./index.html" onclick="show('statistiques')">STATISTIQUES</a>
+        </li>
+          
+          
+        
+         <li class="nav-item">
+			 <a  class="nav-link" href="./index.html" onclick="show('blocs')">BLOCS</a>
+        </li>
+        <li class="nav-item">
+			 <a class="nav-link" href="./index.html" onclick="show('salles')">SALLES</a>
+        </li>
+        
+          <li class="nav-item">
+			 <a class="nav-link" href="./index.html" onclick="show('marques')">MARQUES</a>
+        </li>
+        
+          <li class="nav-item">
+			<a  class="nav-link" href="./index.html" onclick="show('machines')">MACHINES</a> 
 
-				<!-- sidebar-search  -->
-				<div class="sidebar-menu">
-					<ul>
-						<li class="header-menu"><span>Gestion</span></li>
-						<li><a href="./index.html" onclick="show('blocs')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Blocs</a></li>
+       </li>
+       
+       <li class="nav-item">
+			<a class="nav-link" href="./index.html" onclick="show('creneaus')">CRENEAUX</a> 
 
-						<li><a href="./index.html" onclick="show('statistiques')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Statistiques</a></li>
+       </li>
+       
+       <li class="nav-item">
+			<a class="nav-link"  href="./index.html" onclick="show('reservations')">RESERVATION</a> 
 
-						<li><a href="./index.html" onclick="show('marques')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Marques</a></li>
+       </li>
+        
+        <li class="nav-item">
+			<a class="nav-link" href="./index.html" onclick="show('users')">USERS</a>
 
+       </li>
+        
+        
 
-						<li><a href="./index.html" onclick="show('machines')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Machines</a></li>
-                        
-                        <li><a href="./index.html" onclick="show('salles')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Salles</a></li>
-						<li><a href="./index.html" onclick="show('creneaus')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Creneaux</a></li>
-					    <li><a href="./index.html" onclick="show('users')"><i
-								class="zmdi zmdi-hc-1x zmdi-group-work"></i>Utilisateurs</a></li>
-					</ul>
-				</div>
-				<!-- sidebar-menu  -->
-			</div>
-			<!-- sidebar-content  -->
-			<div class="sidebar-footer">
-				<a href="/logout"> <i class="fa fa-power-off"></i> <span>Déconnexion</span>
-				</a>
-			</div>
-		</nav>
+                         <li style="margin-left: 60%;"><a class="btn btn-warning " href="/logout"> <span>LOG OUT</span></a></li>
+					  </ul>	
+			
+		
+		
+		 </div>
+  </div>
+</nav>
 		<!-- sidebar-wrapper  -->
-		<main class="page-content">
-		<div class="container-fluid" id="main-content"></div>
+		<main class="page-content" style="background-color:rgb(64, 128, 128);height:100%;">
+		<div class="container-fluid" id="main-content" style="background-color:rgb(192, 192, 192);border-radius:100px;height:98%;margin-left:-10%"></div>
 
 		</main>
 		<!-- page-content" -->
